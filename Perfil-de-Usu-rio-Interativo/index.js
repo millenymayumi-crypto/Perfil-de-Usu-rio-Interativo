@@ -70,7 +70,7 @@ btnClear.addEventListener("click", () => {
 
     inputNome.value = "";
 
-    tituloNome.textContent = "";
+    tituloNome.textContent = "Nome: ";
 
     imagemUsuario.src = "./img/men.png";
 

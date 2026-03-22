@@ -6,6 +6,8 @@ const tarefa = document.querySelector(".tarefa");
 const inputTarefa = document.querySelector(".input-tarefa");
 const btnAddTask = document.querySelector(".btn-add-task");
 const listaTarefas = document.querySelector(".lista-tarefas");
+const btnClear = document.querySelector(".clear");
+const imagemPadrao = "./img/men.png";
 
 // ---- Carregar dados salvos ----
 
@@ -63,3 +65,15 @@ btnAddTask.addEventListener("click", () => {
     inputTarefa.value = "";
     
 });
+
+btnClear.addEventListener("click", () => {
+
+    inputNome.value = "";
+
+    tituloNome.textContent = "";
+
+    imagemUsuario.src = "./img/men.png";
+
+    localStorage.removeItem("nomeUsuario");
+    localStorage.removeItem("imagemUsuario");
+})

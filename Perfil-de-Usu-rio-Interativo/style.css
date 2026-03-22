@@ -91,7 +91,7 @@ body {
     border-radius: 5px;
     margin-bottom: 8px;
 }
-.btn-add-task, .btn-add-name {
+.btn-add-task, .btn-add-name, .clear {
     padding: 8px 12px;
     border: none;
     border-radius: 5px;
@@ -103,13 +103,17 @@ body {
     cursor: pointer;
     transition: 0.2s;
 }
-.btn-add-task:hover, .btn-add-name:hover {
+.btn-add-task:hover, .btn-add-name:hover, .clear:hover {
     background-color: #ff8fab;
 }
-.btn-add-task:active, .btn-add-name:active {
+.btn-add-task:active, .btn-add-name:active, .clear:active {
     transform: scale(0.95);
 }
 
 .hidden {
     display: none;
+}
+
+.clear {
+    margin-top: 10px;
 }
